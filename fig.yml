@@ -1,0 +1,10 @@
+mimosa:
+  image: centralnexus/mimosa
+  command: python manage.py runserver
+  links:
+   - db
+  ports:
+   - "1461:80"
+
+db:
+  image: postgres
